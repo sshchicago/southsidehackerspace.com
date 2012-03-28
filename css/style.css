@@ -73,6 +73,14 @@ td { vertical-align: top; }
 /* ===== Primary Styles ========================================================
    Author: Alex Zelenskiy
    ========================================================================== */
+@font-face
+{
+	font-family: "Roadgeek 2005 Engschrift";
+	src: url("../font/Roadgeek_2005_Engschrift.eot?") format("eot"),url("../font/Roadgeek_2005_Engschrift.woff") format("woff"),url("../font/Roadgeek_2005_Engschrift.ttf") format("truetype"),url("../font/Roadgeek_2005_Engschrift.svg#Roadgeek2005Engschrift") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 html{
   height:100%;
 }
