@@ -1,229 +1,555 @@
-/* =============================================================================
-   HTML5 Boilerplate CSS: h5bp.com/css
-   ========================================================================== */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
-[hidden] { display: none; }
-
-html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font-size: 1em; line-height: 1.4; }
-
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
-
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
-a:focus { outline: thin dotted; }
-a:hover, a:active { outline: 0; }
-
-abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-weight: bold; }
-blockquote { margin: 1em 40px; }
-dfn { font-style: italic; }
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-ins { background: #ff9; color: #000; text-decoration: none; }
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
-small { font-size: 85%; }
-
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
-
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-
-svg:not(:root) { overflow: hidden; }
-
-figure { margin: 0; }
-
-form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
-label { cursor: pointer; }
-legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-button, input { line-height: normal; }
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
-button[disabled], input[disabled] { cursor: default; }
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
-input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-textarea { overflow: auto; vertical-align: top; resize: vertical; }
-input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
-
-.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
-
-
-
-/* ===== Primary Styles ========================================================
-   Author: Alex Zelenskiy
-   ========================================================================== */
-html{
-  height:100%;
+/*=============================================================================
+HTML5 Boilerplate CSS: h5bp.com/css
+==========================================================================*/
+ARTICLE, ASIDE, DETAILS, FIGCAPTION, FIGURE, FOOTER, HEADER, HGROUP, NAV, SECTION
+{
+	display: block;
 }
-
-body{
-  background-image:url('../img/frame-bg.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  overflow: visible;
-  position: relative;
-  z-index: 2;
-  font-family: Helvetica, arial, sans-serif;
-  padding:0px;
-  margin:0px;
+AUDIO, CANVAS, VIDEO
+{
+	display: inline-block;
+	=display: inline;
+	=zoom: 1;
 }
-
-.wrapper{
-  border: 1px solid #222;
-  position: relative;
-  top:40px;
-  width: 480px;
-  margin: 0px auto;
-  background-color: rgba(255, 255, 255, 0.85);
-  /*border-radius: 5px;*/
-   
-  -webkit-box-shadow: 0px 0px 40px 4px #000;
-     -moz-box-shadow: 0px 0px 40px 4px #000;
-          box-shadow: 0px 0px 40px 4px #000;
-   
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
-  
+AUDIO:not([controls])
+{
+	display: none;
 }
-
-.copy{
-   padding: 5px 20px;
-   border-top: 20px solid #369af8;
+[hidden]
+{
+	display: none;
 }
-
-.contact-form{
-  display: block;
-  position: relative;
-  clear: both;
-  overflow:visible;
-  padding-bottom:10px;
+HTML
+{
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 }
-
-.form-input {
-  display: inline-block;
-  width: 300px;
-  height: 20px;
-  padding: 4px;
-  margin-bottom: 9px;
-  font-size: 13px;
-  line-height: 18px;
-  color: #555;
-  border: 1px solid #888;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+HTML, BUTTON, INPUT, SELECT, TEXTAREA
+{
+	font-family: sans-serif;
+	color: #222;
 }
-
-.submit-button {
-  display: inline-block;
-  padding: 4px 10px 4px;
-  margin-bottom: 0;
-  font-size: 16px;
-  line-height: 20px;
-  color: #333;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  background-color: whiteSmoke;
-  background-image: -moz-linear-gradient(top, white, #E6E6E6);
-  background-image: -ms-linear-gradient(top, white, #E6E6E6);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
-  background-image: -webkit-linear-gradient(top, white, #E6E6E6);
-  background-image: -o-linear-gradient(top, white, #E6E6E6);
-  background-image: linear-gradient(top, white, #E6E6E6);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
-  border-color: #E6E6E6 #E6E6E6 #BFBFBF;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  border: 1px solid #CCC;
-  border-bottom-color: #BBB;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
+BODY
+{
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
 }
-
-/* ====== Headings ====== */
-/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
-h1, .h1{font-size:196%;  font-weight:bold; text-transform:uppercase; font-style: normal; color:#333;}
-h2, .h2{font-size:167%; font-weight:normal; font-style: normal; color:#333;}
-h3, .h3{font-size:146.5%; font-weight:normal; font-style: normal; color:#333;}
-h4, .h4{font-size:123.1%; font-weight:normal; font-style: normal; color: #333;}
-h5, .h5{font-size:108%; font-weight:bold; font-style: normal; color:#333;}
-h6, .h6{font-size:108%; font-weight:normal;  font-style: italic; color:#333;}
-
-/* =============================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (max-device-width: 480px) {
-	/* Style adjustments for viewports that meet the condition */
-  
-  body{
-    background: white;
-  }
-  
-  .wrapper {
-    top: 0px;
-    width:440px;
-  }
+::-moz-selection
+{
+	background: #FE57A1;
+	color: #FFF;
+	text-shadow: none;
 }
-
-/* =============================================================================
-   Non-Semantic Helper Classes
-   ========================================================================== */
-
-.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
-.ir br { display: none; }
-.hidden { display: none !important; visibility: hidden; }
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-.invisible { visibility: hidden; }
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { *zoom: 1; }
-
-/* =============================================================================
-   Print Styles
-   ========================================================================== */
- 
-@media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
+::selection
+{
+	background: #FE57A1;
+	color: #FFF;
+	text-shadow: none;
+}
+A
+{
+	color: #00E;
+}
+A:visited
+{
+	color: #551A8B;
+}
+A:hover
+{
+	color: #06E;
+}
+A:focus
+{
+	outline: thin dotted;
+}
+A:hover, A:active
+{
+	outline: 0;
+}
+ABBR[title]
+{
+	border-bottom: 1px dotted;
+}
+B, STRONG
+{
+	font-weight: bold;
+}
+BLOCKQUOTE
+{
+	margin: 1em 40px;
+}
+DFN
+{
+	font-style: italic;
+}
+HR
+{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #CCC;
+	margin: 1em 0;
+	padding: 0;
+}
+INS
+{
+	background: #FF9;
+	color: #000;
+	text-decoration: none;
+}
+MARK
+{
+	background: #FF0;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+PRE, CODE, KBD, SAMP
+{
+	font-family: monospace, serif;
+	-font-family: "courier new", monospace;
+	font-size: 1em;
+}
+PRE
+{
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+Q
+{
+	quotes: none;
+}
+Q:before, Q:after
+{
+	content: "";
+	content: none;
+}
+SMALL
+{
+	font-size: 85%;
+}
+SUB, SUP
+{
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+SUP
+{
+	top: -0.5em;
+}
+SUB
+{
+	bottom: -0.25em;
+}
+UL, OL
+{
+	margin: 1em 0;
+	padding: 0 0 0 40px;
+}
+DD
+{
+	margin: 0 0 0 40px;
+}
+NAV UL, NAV OL
+{
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+IMG
+{
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+}
+svg:not(:root)
+{
+	overflow: hidden;
+}
+FIGURE
+{
+	margin: 0;
+}
+FORM
+{
+	margin: 0;
+}
+FIELDSET
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+LABEL
+{
+	cursor: pointer;
+}
+LEGEND
+{
+	border: 0;
+	=margin-left: -7px;
+	padding: 0;
+	white-space: normal;
+}
+BUTTON, INPUT, SELECT, TEXTAREA
+{
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	=vertical-align: middle;
+}
+BUTTON, INPUT
+{
+	line-height: normal;
+}
+BUTTON, INPUT[type="button"], INPUT[type="reset"], INPUT[type="submit"]
+{
+	cursor: pointer;
+	-webkit-appearance: button;
+	=overflow: visible;
+}
+BUTTON[disabled], INPUT[disabled]
+{
+	cursor: default;
+}
+INPUT[type="checkbox"], INPUT[type="radio"]
+{
+	box-sizing: border-box;
+	padding: 0;
+	=width: 13px;
+	=height: 13px;
+}
+INPUT[type="search"]
+{
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+INPUT[type="search"]::-webkit-search-decoration, INPUT[type="search"]::-webkit-search-cancel-button
+{
+	-webkit-appearance: none;
+}
+BUTTON::-moz-focus-inner, INPUT::-moz-focus-inner
+{
+	border: 0;
+	padding: 0;
+}
+TEXTAREA
+{
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+}
+INPUT:valid, TEXTAREA:valid
+{
+}
+INPUT:invalid, TEXTAREA:invalid
+{
+	background-color: #F0DDDD;
+}
+TABLE
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+TD
+{
+	vertical-align: top;
+}
+.chromeframe
+{
+	margin: 0.2em 0;
+	background: #CCC;
+	color: #000000;
+	padding: 0.2em 0;
+}
+/*===== Primary Styles ========================================================
+Author: Alex Zelenskiy
+==========================================================================*/
+@font-face {
+    font-family: 'DIN1451';
+    src: url('din1451e-webfont.eot');
+    src: url('din1451e-webfont.eot?#iefix') format('embedded-opentype'),
+         url('din1451e-webfont.woff') format('woff'),
+         url('din1451e-webfont.ttf') format('truetype'),
+         url('din1451e-webfont.svg#DIN1451EngschriftRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+HTML
+{
+	height: 100%;
+}
+BODY
+{
+	background-image: url('../img/frame-bg.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	overflow: visible;
+	position: relative;
+	z-index: 2;
+	font-family: Helvetica, arial, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+.wrapper
+{
+	border: 1px solid #222;
+	position: relative;
+	top: 40px;
+	width: 480px;
+	margin: 0px auto;
+	background-color: rgba(255, 255, 255, 0.85);
+/*border-radius: 5px;*/
+	-webkit-box-shadow: 0px 0px 40px 4px #000;
+	-moz-box-shadow: 0px 0px 40px 4px #000;
+	box-shadow: 0px 0px 40px 4px #000;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.copy
+{
+	padding: 5px 20px;
+}
+.contact-form
+{
+	display: block;
+	position: relative;
+	clear: both;
+	overflow: visible;
+	padding-bottom: 10px;
+}
+.form-input
+{
+	display: inline-block;
+	width: 300px;
+	height: 20px;
+	padding: 4px;
+	margin-bottom: 9px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #555;
+	border: 1px solid #888;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.submit-button
+{
+	display: inline-block;
+	padding: 4px 10px 4px;
+	margin-bottom: 0;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	vertical-align: middle;
+	background-color: #F5F5F5;
+	background-image: -moz-linear-gradient(top, white, #E6E6E6);
+	background-image: -ms-linear-gradient(top, white, #E6E6E6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
+	background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+	background-image: -o-linear-gradient(top, white, #E6E6E6);
+	background-image: linear-gradient(top, white, #E6E6E6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+	border-color: #E6E6E6 #E6E6E6 #BFBFBF;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid #CCC;
+	border-bottom-color: #BBB;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+}
+/*====== Headings ======
+.h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings*/
+H1, H2, H3, H4, H5, H6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+	font-family: "DIN1451", sans-serif;
+	color: #333;
+	font-style: normal;
+	font-weight: normal;
+}
+H1, .h1
+{
+	font-size: 86px;
+}
+H2, .h2
+{
+	font-size: 167%;
+}
+H3, .h3
+{
+	font-size: 146.5%;
+}
+H4, .h4
+{
+	font-size: 123.1%;
+}
+H5, .h5
+{
+	font-size: 108%;
+	font-weight: bold;
+}
+H6, .h6
+{
+	font-size: 108%;
+	font-style: italic;
+}
+/*=============================================================================
+Media Queries
+==========================================================================
+Style adjustments for viewports that meet the condition*/
+@media only screen and (max-device-width: 480px)
+{
+	BODY
+	{
+		background: #FFFFFF;
+	}
+	.wrapper
+	{
+		top: 0px;
+		width: 440px;
+	}
+/*=============================================================================
+Non-Semantic Helper Classes
+==========================================================================*/
+}
+.ir
+{
+	display: block;
+	border: 0;
+	text-indent: -999em;
+	overflow: hidden;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+	=line-height: 0;
+}
+.ir BR
+{
+	display: none;
+}
+.hidden
+{
+	display: none !important;
+	visibility: hidden;
+}
+.visuallyhidden
+{
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus
+{
+	clip: rect(auto auto auto auto);
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+.invisible
+{
+	visibility: hidden;
+}
+.clearfix:before, .clearfix:after
+{
+	content: "";
+	display: table;
+}
+.clearfix:after
+{
+	clear: both;
+}
+.clearfix
+{
+	=zoom: 1;
+}
+/*=============================================================================
+Print Styles
+==========================================================================*/
+@media print
+{
+	*
+	{
+		background: transparent !important;
+		color: #000000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+		filter: none !important;
+		-ms-filter: none !important;
+	}
+/*Black prints faster: h5bp.com/s*/
+	A, A:visited
+	{
+		text-decoration: underline;
+	}
+	A[href]:after
+	{
+		content: " (" attr(href) ")";
+	}
+	ABBR[title]:after
+	{
+		content: " (" attr(title) ")";
+	}
+	.ir A:after, A[href^="javascript:"]:after, A[href^="#"]:after
+	{
+		content: "";
+	}
+/*Don't show links for images, or javascript/internal links*/
+	PRE, BLOCKQUOTE
+	{
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	THEAD
+	{
+		display: table-header-group;
+	}
+/*h5bp.com/t*/
+	TR, IMG
+	{
+		page-break-inside: avoid;
+	}
+	IMG
+	{
+		max-width: 100% !important;
+	}
+	@page
+	{
+		margin: 0.5cm;
+	}
+	P, H2, H3
+	{
+		orphans: 3;
+		widows: 3;
+	}
+	H2, H3
+	{
+		page-break-after: avoid;
+	}
 }
